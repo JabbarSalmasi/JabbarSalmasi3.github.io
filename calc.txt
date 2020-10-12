@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b,x;
+    cout << "Enter 1 if you need an addition " << endl;//Сложение
+    cout << "Enter 2 if you need a subtraction " << endl;//Вычитание
+    cout << "Enter 3 if you need a multiplication " << endl;//Умножение
+    cout << "Enter 4 if you need a division  " << endl;//Деление
+    cout << endl;
+    cin >> x;
+    if (x == 1) {
+        cout << "Enter 2 numbers: " << endl;
+        cin >> a >> b;
+        cout << a + b;
+    }
+
+    else if(x == 2) {
+        cout << "Enter 2 numbers: " << endl;
+        cin >> a >> b;
+        cout << a - b;
+    }
+    else if (x == 3) {
+        cout << "Enter 2 numbers: " << endl;
+        cin >> a >> b;
+        cout << a * b;
+    }
+    else if (x == 4) {
+        cout << "Enter 2 numbers: " << endl;
+        cin >> a >> b;
+        cout << a / b;
+    }
+
+}

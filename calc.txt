@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
 int main()
 {
@@ -7,6 +7,8 @@ int main()
     cout << "Enter 2 if you need a subtraction " << endl;//Вычитание
     cout << "Enter 3 if you need a multiplication " << endl;//Умножение
     cout << "Enter 4 if you need a division  " << endl;//Деление
+    cout << "Enter 5 if you need a square root " << endl;//Вычисление кв корня
+    cout << "Enter 6 if you need a factorial  " << endl;//Выч-е факториала
     cout << endl;
     cin >> x;
     if (x == 1) {
@@ -30,5 +32,9 @@ int main()
         cin >> a >> b;
         cout << a / b;
     }
-
+    else if (x == 5) {
+        cout << "Enter 1 number: " << endl;
+        cin >> a;
+        cout << sqrt(a);
+    }  
 }
